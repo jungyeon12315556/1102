@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        #first{
+            display: inline;
+            padding: 20px;
+            border: 1px solid black;
+            width: 10000px;
+        }
+        /* 아이디 선택자는 한개만 가능 */
+/* 인라인은 패딩값은 먹지만 width와 height는 못먹는다 */
+/* 블락은 width와 height를 받아들인다 */
+        .class{
+            display: inline-block;
+            padding: 25px;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+        }
+        /* 인라인블락은 패딩값먹음 */
+        .two{
+            display: block;
+            padding: 25px;
+            border: 1px solid black;
+            width: 250px;
+            height: 250px;
+        }
+        .one{
+            background: red;
+        }
+        .three{
+            background: orange;
+        }
+        .four{
+            background: yellow;
+        }
+        .five{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="first">1번</li>
+        <li>2번</li>
+        <li>3번</li>
+        <li>4번</li>
+    </ul>
+    <ul>
+        <li class="class">1번</li>
+        <li class="class">2번</li>
+        <li class="class">3번</li>
+        <li class="class">4번</li>
+    </ul>
+    <ul>
+        <li class="two one">1번</li>
+        <li class="two three">2번</li>
+        <li class="two four">3번</li>
+        <li class="two five">4번</li>
+    </ul>
+</body>
+</html>
